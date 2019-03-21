@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# firestore credentials 
+
+/src/environments/db_creds.ts
+
 # compiled output
 /dist
 /tmp

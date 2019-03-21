@@ -2,8 +2,18 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { db_creds } from './db_creds';
+
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+      apiKey: db_creds.apiKey,
+      authDomain: db_creds.authDomain,
+      databaseURL: db_creds.databaseURL,
+      projectId: db_creds.projectId,
+      storageBucket: db_creds.storageBucket,
+      messagingSenderId: db_creds.messagingSenderId,
+  }
 };
 
 /*
